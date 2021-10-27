@@ -1,0 +1,4 @@
+pilot-
+left joystick X & Y axes- strafe / lateral and vertical throttle
+right joystick X axis- rotational throttle
+X button- toggle between robot- and field-oriented control modes
