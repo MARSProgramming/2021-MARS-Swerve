@@ -96,17 +96,53 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Globals" Type="Folder" URL="../Globals">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="Hardware" Type="Folder" URL="../Hardware">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Globals" Type="Folder"/>
+		<Item Name="Hardware" Type="Folder">
+			<Item Name="Swerve_Drive_Hardware.vi" Type="VI" URL="../Hardware/Swerve_Drive_Hardware.vi"/>
 		</Item>
 		<Item Name="lib" Type="Folder" URL="/&lt;vilib&gt;/addons/FRC_ThirdParty/lib">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Subsystems" Type="Folder" URL="../Subsystems">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Subsystems" Type="Folder">
+			<Item Name="Drive" Type="Folder">
+				<Item Name="4265" Type="Folder">
+					<Item Name="AngularDistance.vi" Type="VI" URL="../Subsystems/Drive/4265/AngularDistance.vi"/>
+					<Item Name="ConfigureDriverProfiles.vi" Type="VI" URL="../Subsystems/Drive/4265/ConfigureDriverProfiles.vi"/>
+					<Item Name="constants.vi" Type="VI" URL="../Subsystems/Drive/4265/constants.vi"/>
+					<Item Name="CustomPID_v4.0.vi" Type="VI" URL="../Subsystems/Drive/4265/CustomPID_v4.0.vi"/>
+					<Item Name="CustomPID_v4.1.vi" Type="VI" URL="../Subsystems/Drive/4265/CustomPID_v4.1.vi"/>
+					<Item Name="DriveStateController.vi" Type="VI" URL="../Subsystems/Drive/4265/DriveStateController.vi"/>
+					<Item Name="dscommands.vi" Type="VI" URL="../Subsystems/Drive/4265/dscommands.vi"/>
+					<Item Name="dsdata.vi" Type="VI" URL="../Subsystems/Drive/4265/dsdata.vi"/>
+					<Item Name="EdgeTrigger.vi" Type="VI" URL="../Subsystems/Drive/4265/EdgeTrigger.vi"/>
+					<Item Name="FieldOrientedRotate.vi" Type="VI" URL="../Subsystems/Drive/4265/FieldOrientedRotate.vi"/>
+					<Item Name="FieldOrientedTransform.vi" Type="VI" URL="../Subsystems/Drive/4265/FieldOrientedTransform.vi"/>
+					<Item Name="Latch.vim" Type="VI" URL="../Subsystems/Drive/4265/Latch.vim"/>
+					<Item Name="LatchGoalAngle.vi" Type="VI" URL="../Subsystems/Drive/4265/LatchGoalAngle.vi"/>
+					<Item Name="ModeDrivebase.vi" Type="VI" URL="../Subsystems/Drive/4265/ModeDrivebase.vi"/>
+					<Item Name="ModeFieldOriented.vi" Type="VI" URL="../Subsystems/Drive/4265/ModeFieldOriented.vi"/>
+					<Item Name="outputs.vi" Type="VI" URL="../Subsystems/Drive/4265/outputs.vi"/>
+					<Item Name="ReadXML.vi" Type="VI" URL="../Subsystems/Drive/4265/ReadXML.vi"/>
+					<Item Name="SendMessageToConsole.vi" Type="VI" URL="../Subsystems/Drive/4265/SendMessageToConsole.vi"/>
+					<Item Name="sensors.vi" Type="VI" URL="../Subsystems/Drive/4265/sensors.vi"/>
+					<Item Name="StateDrivebase.vi" Type="VI" URL="../Subsystems/Drive/4265/StateDrivebase.vi"/>
+					<Item Name="StickyButton.vi" Type="VI" URL="../Subsystems/Drive/4265/StickyButton.vi"/>
+					<Item Name="SwerveCalculations.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveCalculations.vi"/>
+					<Item Name="SwerveChooseAngle_Luke.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveChooseAngle_Luke.vi"/>
+					<Item Name="SwerveChooseCenter.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveChooseCenter.vi"/>
+					<Item Name="SwerveHeadingLock.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveHeadingLock.vi"/>
+					<Item Name="SwerveJoystickRotationScaling.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveJoystickRotationScaling.vi"/>
+					<Item Name="SwerveJoystickStrafeScaling.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveJoystickStrafeScaling.vi"/>
+					<Item Name="SwerveKinematics.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveKinematics.vi"/>
+					<Item Name="SwerveLatchGoalAngle.vi" Type="VI" URL="../Subsystems/Drive/4265/SwerveLatchGoalAngle.vi"/>
+					<Item Name="Timer.vi" Type="VI" URL="../Subsystems/Drive/4265/Timer.vi"/>
+				</Item>
+				<Item Name="Drive_Cluster.ctl" Type="VI" URL="../Subsystems/Drive/Drive_Cluster.ctl"/>
+				<Item Name="Drive_Control_States.ctl" Type="VI" URL="../Subsystems/Drive/Drive_Control_States.ctl"/>
+				<Item Name="Drive_Execute.vi" Type="VI" URL="../Subsystems/Drive/Drive_Execute.vi"/>
+				<Item Name="Drive_Orientation_States.ctl" Type="VI" URL="../Subsystems/Drive/Drive_Orientation_States.ctl"/>
+				<Item Name="Drive_Set.vi" Type="VI" URL="../Subsystems/Drive/Drive_Set.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
@@ -122,11 +158,16 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Teleop" Type="Folder" URL="../Teleop">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Teleop" Type="Folder">
+			<Item Name="Drive_Teleop.vi" Type="VI" URL="../Teleop/Drive_Teleop.vi"/>
 		</Item>
-		<Item Name="Utility VIs" Type="Folder" URL="../Utility VIs">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Utility VIs" Type="Folder">
+			<Item Name="CustomPID_v4.0.vi" Type="VI" URL="../Utility VIs/CustomPID_v4.0.vi"/>
+			<Item Name="Drive_Sensor_To_Angle.vi" Type="VI" URL="../Utility VIs/Drive_Sensor_To_Angle.vi"/>
+			<Item Name="Get_Joystick.vi" Type="VI" URL="../Utility VIs/Get_Joystick.vi"/>
+			<Item Name="Joystick_Controls.ctl" Type="VI" URL="../Utility VIs/Joystick_Controls.ctl"/>
+			<Item Name="Sensor_Reads.vi" Type="VI" URL="../Utility VIs/Sensor_Reads.vi"/>
+			<Item Name="Toggle.vi" Type="VI" URL="../Utility VIs/Toggle.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -155,10 +196,12 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_Phoenix_MotorControl_ControlMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_ControlMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_DevRefData.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_DevRefData.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_GetDevRefData.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_GetDevRefData.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_NeutralMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_NeutralMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_RefNumRegistryGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_RefNumRegistryGet.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_RefNumRegistrySet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_RefNumRegistrySet.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_Set.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_SetInverted_TalonFX.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_SetInverted_TalonFX.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_SetNeutralMode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_SetNeutralMode.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_SetSelectedSensorPosition.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Sensor/CTRE_Phoenix_MotorControl_SetSelectedSensorPosition.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_TalonFXInvertType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_TalonFXInvertType.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_UpdateRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_UpdateRefNum.vi"/>
@@ -552,6 +595,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Drive_Globals.vi" Type="VI" URL="../Globals/Drive_Globals.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -568,6 +612,8 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Sensor_Values.vi" Type="VI" URL="../Globals/Sensor_Values.vi"/>
+			<Item Name="SwerveChooseBestAngle.vi" Type="VI" URL="../Utility VIs/SwerveChooseBestAngle.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
