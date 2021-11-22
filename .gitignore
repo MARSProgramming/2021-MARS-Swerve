@@ -1,6 +1,17 @@
+# Libraries
+*.lvlibp
+*.llb
 
-2019 roboRIO Project.aliases
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
-2020 roboRIO Project.aliases
+# Executables
+*.exe
 
-2021-MARS-Swerve.aliases
+# Metadata
+*.aliases
+*.lvlps
+.cache/
