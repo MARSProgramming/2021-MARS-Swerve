@@ -671,6 +671,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_SolenoidOpenDouble.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidOpenDouble.vi"/>
 				<Item Name="WPI_SolenoidOpenSingle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidOpenSingle.vi"/>
 				<Item Name="WPI_SolenoidOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidOpen.vi"/>
+				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -694,12 +695,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Command_Turret_AutoTarget.vi" Type="VI" URL="../Auto/Auto Commands/Command_Turret_AutoTarget.vi"/>
 			<Item Name="Command_Execution_State.ctl" Type="VI" URL="../Auto/Auto Utilities/Command_Execution_State.ctl"/>
 			<Item Name="Timeout.vi" Type="VI" URL="../Auto/Auto Utilities/Timeout.vi"/>
-			<Item Name="Turret_Globals.vi" Type="VI" URL="../Subsystems/Turret/Turret_Globals.vi"/>
-			<Item Name="Flywheel_Globals.vi" Type="VI" URL="../Subsystems/Flywheel/Flywheel_Globals.vi"/>
-			<Item Name="Intake_Globals.vi" Type="VI" URL="../Subsystems/Intake/Intake_Globals.vi"/>
-			<Item Name="Map_2Buttons_To_Throttle.vi" Type="VI" URL="../Utility_VIs/Map_2Buttons_To_Throttle.vi"/>
-			<Item Name="Joystick_Controls.ctl" Type="VI" URL="../Utility_VIs/Joystick_Controls.ctl"/>
-			<Item Name="Toggle.vi" Type="VI" URL="../Utility_VIs/Toggle.vi"/>
 			<Item Name="M14_Flywheel_Hardware_Globals.vi" Type="VI" URL="../M14 Hardware/Flywheel/M14_Flywheel_Hardware_Globals.vi"/>
 			<Item Name="M14_Flywheel_Hardware_Loop.vi" Type="VI" URL="../M14 Hardware/Flywheel/M14_Flywheel_Hardware_Loop.vi"/>
 			<Item Name="M14_Intake_Hardware_Globals.vi" Type="VI" URL="../M14 Hardware/Intake/M14_Intake_Hardware_Globals.vi"/>
