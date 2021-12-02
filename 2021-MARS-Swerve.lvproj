@@ -586,7 +586,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NT Server Prototype.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Server Prototype.vi"/>
 				<Item Name="WPI_DriverStationGet Robot Mode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGet Robot Mode.vi"/>
 				<Item Name="WPI_DriverStationGetModeAndStatusInternal.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGetModeAndStatusInternal.vi"/>
-				<Item Name="DS Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/DriverStation/DS Update Ops.ctl"/>
 				<Item Name="WPI_DriverStationStartStopVI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStartStopVI.vi"/>
 				<Item Name="WPI_DriverStationStart VI Asynchronous.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStart VI Asynchronous.vi"/>
 				<Item Name="WPI_DriverStationStop VI Asynchronous.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStop VI Asynchronous.vi"/>
@@ -672,6 +671,17 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_SolenoidOpenSingle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidOpenSingle.vi"/>
 				<Item Name="WPI_SolenoidOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidOpen.vi"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="DS Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/DriverStation/DS Update Ops.ctl"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -689,12 +699,6 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Command_Flywheel_SpinUp.vi" Type="VI" URL="../Auto/Auto Commands/Command_Flywheel_SpinUp.vi"/>
-			<Item Name="Command_Intake.vi" Type="VI" URL="../Auto/Auto Commands/Command_Intake.vi"/>
-			<Item Name="Command_Turret_MoveToPosition.vi" Type="VI" URL="../Auto/Auto Commands/Command_Turret_MoveToPosition.vi"/>
-			<Item Name="Command_Turret_AutoTarget.vi" Type="VI" URL="../Auto/Auto Commands/Command_Turret_AutoTarget.vi"/>
-			<Item Name="Command_Execution_State.ctl" Type="VI" URL="../Auto/Auto Utilities/Command_Execution_State.ctl"/>
-			<Item Name="Timeout.vi" Type="VI" URL="../Auto/Auto Utilities/Timeout.vi"/>
 			<Item Name="M14_Flywheel_Hardware_Globals.vi" Type="VI" URL="../M14 Hardware/Flywheel/M14_Flywheel_Hardware_Globals.vi"/>
 			<Item Name="M14_Flywheel_Hardware_Loop.vi" Type="VI" URL="../M14 Hardware/Flywheel/M14_Flywheel_Hardware_Loop.vi"/>
 			<Item Name="M14_Intake_Hardware_Globals.vi" Type="VI" URL="../M14 Hardware/Intake/M14_Intake_Hardware_Globals.vi"/>
@@ -704,6 +708,8 @@ AddOutputFilter chunkFilter
 			<Item Name="M14 Turret_Hardware_Begin.vi" Type="VI" URL="../M14 Hardware/Turret/M14 Turret_Hardware_Begin.vi"/>
 			<Item Name="M14_Intake_Hardware_Begin.vi" Type="VI" URL="../M14 Hardware/Intake/M14_Intake_Hardware_Begin.vi"/>
 			<Item Name="M14_Flywheel_Hardware_Begin.vi" Type="VI" URL="../M14 Hardware/Flywheel/M14_Flywheel_Hardware_Begin.vi"/>
+			<Item Name="Magazine_Hardware_Globals.vi" Type="VI" URL="../M14 Hardware/Magazine/Magazine_Hardware_Globals.vi"/>
+			<Item Name="Magazine_Hardware_Begin.vi" Type="VI" URL="../M14 Hardware/Magazine/Magazine_Hardware_Begin.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
